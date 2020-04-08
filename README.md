@@ -125,7 +125,8 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 # Note
 
 I am looking for a better algo that is small code and more efficient and precise,
-I search and only found modules that compare whole strings or compare string lenghts,
-this is what antivirus do basically, it wont need all license files shipped to compare to,
-if you have a better algo that is small and works at compile-time,
-just send a pull request, it will be merged.
+I search and only found modules on other languages that compare whole strings,
+or compare string lenghts, or compare filenames, or huge `try...except` chains of that.
+My algo is what antivirus do basically, it wont need all license files shipped to compare to,
+if you have a better algo that is faster smaller code and works at compile-time,
+just send a pull request, and it will be merged.
