@@ -1,7 +1,7 @@
 # parseLicense
 
 - Parse Standard SPDX Licenses from string to Enum. `parseLicense(s: string): License`.
-- Tests. Documentation. Works at compile-time. Fast algo. `$` Dollar for human-friendly Standard name.
+- [Tests. Documentation. Examples.](https://juancarlospaco.github.io/parselicense) Works at compile-time. Fast algo. `$` Dollar for human-friendly Standard name.
 
 
 # Use
@@ -26,6 +26,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
     doAssert parseLicense(wtfplTxt, default = Licenses.Mit) == Licenses.WTFPL
     doAssert parseLicense(wtfplTxt).get() == Licenses.WTFPL
 
+
     const zeroBsdTxt = """Copyright (C) 2006 by Rob Landley <rob@landley.net>
 
 Permission to use, copy, modify, and/or distribute this software for any purpose
@@ -41,6 +42,7 @@ PERFORMANCE OF THIS SOFTWARE.
 """
     doAssert parseLicense(zeroBsdTxt, default = Licenses.Mit) == Licenses.ZeroBSD
     doAssert parseLicense(zeroBsdTxt).get() == Licenses.ZeroBSD
+
 
     const fairTxt = """Fair License <Copyright Information>
 
@@ -61,6 +63,7 @@ stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
 """
     doAssert parseLicense(beerwareTxt, default = Licenses.Mit) == Licenses.Beerware
     doAssert parseLicense(beerwareTxt,).get() == Licenses.Beerware
+
 
     const curlTxt = """COPYRIGHT AND PERMISSION NOTICE Copyright (c) 1996 - 2015, Daniel Stenberg,
 <daniel@haxx.se>.
@@ -86,6 +89,7 @@ in this Software without prior written authorization of the copyright holder.
     doAssert parseLicense(curlTxt, default = Licenses.Mit) == Licenses.Curl
     doAssert parseLicense(curlTxt,).get() == Licenses.Curl
 
+
   ## Works with lowercased and uppercased Licenses.
   const iscTxt = toLowerAscii("""ISC License Copyright (c) 2004-2010 by Internet Systems Consortium, Inc. ("ISC")
 
@@ -104,6 +108,7 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 """)
   doAssert parseLicense(iscTxt, default = Licenses.Mit) == Licenses.Isc
   doAssert parseLicense(iscTxt,).get() == Licenses.Isc
+
 
   ## Works with invalid Data (Not a License).
   doAssert parseLicense("Invalid data", default = Licenses.Mit) == Licenses.Mit
