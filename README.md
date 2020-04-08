@@ -120,3 +120,12 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 # JavaScript
 
 - [For a version that works on the browser see the javascript folder.](https://github.com/juancarlospaco/parselicense/tree/master/javascript)
+
+
+# Note
+
+I am looking for a better algo that is small code and more efficient and precise,
+I search and only found modules that compare whole strings or compare string lenghts,
+this is what antivirus do basically, it wont need all license files shipped to compare to,
+if you have a better algo that is small and works at compile-time,
+just send a pull request, it will be merged.
