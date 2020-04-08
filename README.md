@@ -115,3 +115,8 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
   doAssert parseLicense("Invalid data").isNone()
 
 ```
+
+
+# JavaScript
+
+- [For a version that works on the browser see the javascript folder.]()
