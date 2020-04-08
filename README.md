@@ -119,4 +119,4 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 # JavaScript
 
-- [For a version that works on the browser see the javascript folder.]()
+- [For a version that works on the browser see the javascript folder.](https://github.com/juancarlospaco/parselicense/tree/master/javascript)
