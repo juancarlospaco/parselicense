@@ -907,8 +907,7 @@ func `$`*(license: Licenses): string {.noinline.} =
   of Zlib: "zlib"
 
 
-#runnableExamples:
-when isMainModule:
+runnableExamples:
   import options, strutils
   static:
     const wtfplTxt = """DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
